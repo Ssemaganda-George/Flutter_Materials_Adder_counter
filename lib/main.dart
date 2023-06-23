@@ -8,23 +8,29 @@ class TestApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        home: Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.red,
-        title: Text(
-          'Welcome to the JojApp',
+      home: Scaffold(
+        appBar: AppBar(
+          backgroundColor: Colors.red,
+          title: Text(
+            'Welcome to the JojApp',
+          ),
+        ),
+        body: Center(
+          child: RawMaterialButton(
+            onPressed: () {},
+            fillColor: Colors.red,
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(50.0),
+            ),
+            constraints: BoxConstraints.tightFor(height: 50.0, width: 100.0),
+          ),
         ),
       ),
-      body: Center(
-        child: Text("Hello User"),
-      ),
-      // floatingActionButton: FloatingActionButton(
-      //   backgroundColor: Colors.red,
-      //   child: Icon(Icons.add),
-      //  ),
-    ));
+    );
   }
 }
+
+//
 
 // import 'package:flutter/material.dart';
 
