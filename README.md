@@ -1,4 +1,4 @@
-# hello_world
+Flutter App Counter
 
 A new Flutter project created with https://flutlab.io
 
